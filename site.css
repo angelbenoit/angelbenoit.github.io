@@ -1,0 +1,79 @@
+body{
+	margin: 0;
+}
+
+
+#container{
+	display: flex;
+	flex-direction: column;
+  	height: 1500px;
+}
+/*FRONT PAGE*/
+#frontPage{
+	background-color: silver;
+	text-align: center;
+	flex-grow: 1;
+	animation: backgroundSlide 20s infinite;
+	background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@keyframes backgroundSlide{
+	0%{
+		background-image: url("images/diet-soda.jpg"), url("images/diet-soda2.jpg");
+	}
+	25%{
+		background-image: url("images/diet-soda2.jpg"), url("images/coke.jpeg");
+	}
+	50%{
+		background-image: url("images/coke.jpeg"), url("images/sugar.jpeg");
+	}
+	75%{
+		background-image: url("images/sugar.jpeg"), url("images/diet-soda2.jpg");
+	}
+	100%{
+		background-image: url("images/diet-soda2.jpg");
+	}
+}
+
+#frontPage-title{
+	font-family: 'Lobster', cursive;
+	font-size: 45px;
+	padding-top: 100px;
+	animation: colorChange 20s infinite;
+}
+
+@keyframes colorChange{
+	0%{
+		color:black;
+	}
+	25%{
+		color: white;
+	}
+	50%{
+		color: silver;	
+	}
+	75%{
+		color: white;
+	}
+	100%{
+		color: white;
+	}
+}
+
+/*==========INTRODUCTION==========*/
+#intro{
+	flex-grow: 1;
+}
+
+hr{
+	width: 50%;
+}
+
+#intro-header{
+	text-align: center;
+	padding-top: 10%;
+	width: 75%;
+	padding-left: 10%;
+}
+
