@@ -6,13 +6,13 @@ body{
 #container{
 	display: flex;
 	flex-direction: column;
-  	height: 3000px;
+  	height: 5000px;
 }
 /*FRONT PAGE*/
 #frontPage{
 	background-color: silver;
 	text-align: center;
-	flex-grow: 2;
+	flex-grow: 2.5;
 	animation: backgroundSlide 20s infinite;
 	background-size: cover;
     background-repeat: no-repeat;
@@ -41,23 +41,29 @@ body{
 	font-size: 45px;
 	padding-top: 400px;
 	animation: colorChange 20s infinite;
+	color: white;
+  	text-shadow:
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
 }
 
 @keyframes colorChange{
 	0%{
-		color:black;
+		color:silver;
 	}
 	25%{
 		color: white;
 	}
 	50%{
-		color: gray;	
+		color: silver;	
 	}
 	75%{
 		color: white;
 	}
 	100%{
-		color: white;
+		color: silver;
 	}
 }
 
@@ -100,7 +106,7 @@ hr{
 
 /*========== BENEFITS ==========*/
 #benefits{
-	flex-grow: 2;
+	flex-grow: 1;
 	background-image: url("images/workout.jpeg");
 	background-size: cover;
     background-repeat: no-repeat;
@@ -112,15 +118,18 @@ hr{
 	text-align: center;
 }
 #benefits-text h1{
-	font-weight: bold;
 	font-family: 'Lobster', cursive;
-	color: #0D8EFD;
-	text-decoration: underline;
+  	color: white;
+  	text-shadow:
+    -1px -1px 0 #239AFF,  
+     1px -1px 0 #000,
+    -1px 1px 0 #239AFF,
+     1px 1px 0 #000;
 }
 
 .benefits-p{	
 	border-radius: 7px;
-	background-color: rgba(223,223,223, 0.5);
+	background-color: rgb(223,223,223);
 	color: rgb(86,73,73);
 	font-size: 20px;
 }
@@ -130,3 +139,63 @@ hr{
 	height: 45%;
 	border-radius: 10px;
 }
+
+/*==========SUGAR RISK============*/
+#sugar-risk{
+	flex-grow: 1;
+	text-align: center;
+}
+
+#sugar-risk h1{
+	padding-top: 7%;
+	font-family: 'Lobster', cursive;
+}
+
+/*==========CANCER STATS==========*/
+#cancer-stats{
+	flex-grow: 1;
+	background-image: url("images/surgery.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#cancer-stats h1{
+	font-family: 'Lobster', cursive;
+	padding-top: 5%;
+	color: red;
+  	text-shadow:
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 black
+}
+
+/*=========HEALTH RISKS==========*/
+#health-risks{
+	flex-grow: 1;
+    text-align: center;
+}
+
+#health-risks-title{
+	margin-top: 5%;
+	font-family: 'Lobster', cursive;
+  	color: white;
+  	text-shadow:
+    -1px -1px 0 #CD0000,  
+     1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 black;
+}
+
+#health-risks-body{
+	padding-left: 15%;
+	padding-right: 15%;
+	
+	
+}
+
+#health-risks p{
+	color: #000;
+}
+
