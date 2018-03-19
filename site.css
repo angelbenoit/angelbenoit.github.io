@@ -108,6 +108,7 @@ hr{
 #benefits{
 	flex-grow: 1;
 	background-image: url("images/workout.jpeg");
+	filter: grayscale(100%);
 	background-size: cover;
     background-repeat: no-repeat;
 }
@@ -119,12 +120,12 @@ hr{
 }
 #benefits-text h1{
 	font-family: 'Lobster', cursive;
-  	color: white;
+  	color: #2E2E2E;
   	text-shadow:
-    -1px -1px 0 #239AFF,  
-     1px -1px 0 #000,
-    -1px 1px 0 #239AFF,
-     1px 1px 0 #000;
+    -1px -1px 0 white,  
+     1px -1px 0 white,
+    -1px 1px 0 white,
+     1px 1px 0 white;
 }
 
 .benefits-p{	
@@ -132,10 +133,11 @@ hr{
 	background-color: rgb(223,223,223);
 	color: rgb(86,73,73);
 	font-size: 20px;
+	padding: 9%;
 }
 
 #benefits-text img{
-	width: 60%;
+	width: 45%;
 	height: 45%;
 	border-radius: 10px;
 }
@@ -144,6 +146,12 @@ hr{
 #sugar-risk{
 	flex-grow: 1;
 	text-align: center;
+
+}
+
+#sugar-risk div{
+	padding-left: 10%;
+	padding-right: 10%;
 }
 
 #sugar-risk h1{
@@ -151,10 +159,15 @@ hr{
 	font-family: 'Lobster', cursive;
 }
 
+#sugar-risk p{
+	font-size: 20px;
+}
+
 /*==========CANCER STATS==========*/
 #cancer-stats{
 	flex-grow: 1;
 	background-image: url("images/surgery.jpg");
+	filter: grayscale(50%);
 	background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
@@ -163,12 +176,14 @@ hr{
 #cancer-stats h1{
 	font-family: 'Lobster', cursive;
 	padding-top: 5%;
-	color: red;
-  	text-shadow:
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-    -1px 1px 0 #000,
-     1px 1px 0 black
+	color: white;
+	font-size: 55px;
+    text-shadow: 10px 10px 8px #000000;
+}
+
+#cancer-stats img{
+	border-radius: 15px;
+
 }
 
 /*=========HEALTH RISKS==========*/
