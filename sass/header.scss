@@ -1,0 +1,45 @@
+.header{
+    display: flex;
+    min-height: 45vh;
+    padding: 0 10%;
+    background: linear-gradient(to left top, #fff, rgba(27, 176, 161, 0.65));
+    clip-path: polygon(0 0, 100% 0, 100% 65% , 0 100%);
+    align-items: center;
+
+    &__text{
+        flex: .5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &--name{
+            color: $color-gray-1;
+            opacity: 0;
+            animation: headerName 1.5s ease forwards;
+            font-size: 250%;
+        }
+
+        &--title{
+            color: $color-gray-1;
+            padding-top: 2.5rem;
+            transform: translateX(50px);
+            opacity: 0;
+            animation: headerTitle 1.5s ease forwards;
+            animation-delay: 1s;
+            font-size: 125%;
+        }
+    }
+
+    &__image{
+        flex: 1;
+        opacity: 0;
+        align-items: center;
+        animation: headerImage 1.5s ease forwards;
+        animation-delay: 1.5s;
+
+        img{
+            width: 50%;
+        }
+    }
+}

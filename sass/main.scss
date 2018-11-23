@@ -1,3 +1,16 @@
-*{
-    color: red;
+.container{
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
 }
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+$color-gray-1: rgb(75, 75, 75);
+
+@import "about.scss";
+@import "animations.scss";
+@import "header.scss";
