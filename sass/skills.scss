@@ -1,15 +1,21 @@
 .skills{
-    background-color: green;
-    min-height: 100vh;
+    background: linear-gradient(270deg, #156136, #0eaa52, #39e082);
+    background-size: 600% 600%;
+    min-height: 80vh;
     clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
 
+    -webkit-animation: SkillsBackgroundAnimation 8s ease infinite;
+    -moz-animation: SkillsBackgroundAnimation 8s ease infinite;
+    animation: SkillsBackgroundAnimation 8s ease infinite;
+
     h3{
         text-align: center;
         font-size: 150%;
         transform: rotate(-7deg);
+        color: $color-gray-1;
 
         @media only screen and (max-width: 750px) {
            font-size: 85%;

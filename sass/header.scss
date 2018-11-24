@@ -1,7 +1,22 @@
 .header{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    min-height: 45vh;
+    min-height: 60vh;
     padding: 0 10%;
+    background: -webkit-gradient(linear,
+                right top, left top,
+                from(#00ffbbab), color-stop(#2f997ea6),
+                color-stop(#296556af), to(#224b40a1))
+                ,url("../images/codeImage.jpg");
+    background: -webkit-linear-gradient(right,
+                #00ffbbab, #2f997ea6,
+                #296556af, #224b40a1)
+                ,url("../images/codeImage.jpg");
+    background: -o-linear-gradient(right,
+                #00ffbbab, #2f997ea6,
+                #296556af, #224b40a1)
+                ,url("../images/codeImage.jpg");
     background: linear-gradient(270deg,
                 #00ffbbab, #2f997ea6,
                 #296556af, #224b40a1)
@@ -9,37 +24,57 @@
     background-size: cover;
     background-repeat: none;
     background-position: top;
-    animation: BackgroundAnimate 25s linear infinite;
+    -webkit-animation: BackgroundAnimate 25s linear infinite;
+            animation: BackgroundAnimate 25s linear infinite;
     clip-path: polygon(0 0, 100% 0, 100% 65% , 0 100%);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 65% , 0 100%);
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     @media only screen and (max-width: 950px) {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         min-height: 80vh;
         background-size: 300%;
         text-align: center;
     }
 
     &__text{
-        flex: .5;
+        -webkit-box-flex: .5;
+            -ms-flex: .5;
+                flex: .5;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         font-weight: bold;
 
         @media only screen and (max-width: 550px) {
             padding-top: 1.5vh;
-            flex: 1;
+            -webkit-box-flex: 1;
+                -ms-flex: 1;
+                    flex: 1;
         }
 
         &--name{
             color: #fff;
             opacity: 0;
-            animation: headerName 1.5s ease forwards;
-            font-size: 250%;
-            letter-spacing: .15em;
+            -webkit-animation: headerName 1.5s ease forwards;
+                    animation: headerName 1.5s ease forwards;
+            font-size: 4em;
+            letter-spacing: .1em;
 
             @media only screen and (max-width: 950px) {
                 font-size: 200%;
@@ -49,10 +84,14 @@
         &--title{
             color: #fff;
             padding-top: 2.5rem;
-            transform: translateX(50px);
+            -webkit-transform: translateX(50px);
+                -ms-transform: translateX(50px);
+                    transform: translateX(50px);
             opacity: 0;
-            animation: headerTitle 1.5s ease forwards;
-            animation-delay: 1s;
+            -webkit-animation: headerTitle 1.5s ease forwards;
+                    animation: headerTitle 1.5s ease forwards;
+            -webkit-animation-delay: 1s;
+                    animation-delay: 1s;
             font-size: 150%;
             letter-spacing: .15em;
 
@@ -63,11 +102,17 @@
     }
 
     &__image{
-        flex: 1;
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
         opacity: 0;
-        align-items: center;
-        animation: headerImage 1.5s ease forwards;
-        animation-delay: 1.5s;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-animation: headerImage 1.5s ease forwards;
+                animation: headerImage 1.5s ease forwards;
+        -webkit-animation-delay: 1.5s;
+                animation-delay: 1.5s;
 
         img{
             width: 50%;
