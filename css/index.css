@@ -92,8 +92,9 @@
   @media only screen and (max-width: 950px) {
     .header {
       flex-direction: column;
-      min-height: 70vh;
-      background-size: 300%; } }
+      min-height: 80vh;
+      background-size: 300%;
+      text-align: center; } }
   .header__text {
     flex: .5;
     display: flex;
@@ -103,17 +104,17 @@
     font-weight: bold; }
     @media only screen and (max-width: 550px) {
       .header__text {
-        padding-top: 15px; } }
+        padding-top: 1.5vh;
+        flex: 1; } }
     .header__text--name {
       color: #fff;
       opacity: 0;
       animation: headerName 1.5s ease forwards;
       font-size: 250%;
-      letter-spacing: 1.5px; }
+      letter-spacing: .15em; }
       @media only screen and (max-width: 950px) {
         .header__text--name {
-          font-size: 200%;
-          letter-spacing: 3px; } }
+          font-size: 200%; } }
     .header__text--title {
       color: #fff;
       padding-top: 2.5rem;
@@ -122,7 +123,7 @@
       animation: headerTitle 1.5s ease forwards;
       animation-delay: 1s;
       font-size: 150%;
-      letter-spacing: 3px; }
+      letter-spacing: .15em; }
       @media only screen and (max-width: 950px) {
         .header__text--title {
           font-size: 150%; } }
@@ -138,7 +139,10 @@
         .header__image img {
           margin: 0 auto;
           width: 100%;
-          height: 150px; } }
+          height: 10rem; } }
+      @media only screen and (max-width: 400px) {
+        .header__image img {
+          height: 9rem; } }
 
 .skills {
   background-color: green;
@@ -151,6 +155,9 @@
     text-align: center;
     font-size: 150%;
     transform: rotate(-7deg); }
+    @media only screen and (max-width: 750px) {
+      .skills h3 {
+        font-size: 85%; } }
   .skills__grid {
     padding: 3rem;
     margin-top: 10px;
@@ -183,5 +190,9 @@
         .skills__grid svg, .skills__grid img {
           width: 50px;
           height: 50px; } }
+      @media only screen and (max-width: 500px) {
+        .skills__grid svg, .skills__grid img {
+          width: 30px;
+          height: 30px; } }
       .skills__grid svg:hover, .skills__grid img:hover {
         filter: brightness(1.5); }
