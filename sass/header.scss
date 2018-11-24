@@ -27,6 +27,10 @@
         justify-content: center;
         font-weight: bold;
 
+        @media only screen and (max-width: 550px) {
+            padding-top: 15px;
+        }
+
         &--name{
             color: #fff;
             opacity: 0;
