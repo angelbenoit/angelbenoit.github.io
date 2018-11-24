@@ -34,3 +34,29 @@
     }
 }
 
+@keyframes aboutText{
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: .4;
+    }
+    65%{
+        opacity: .7;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes BackgroundAnimate {
+    0%{
+        background-position:top;
+    }
+    50%{
+        background-position: bottom;
+    }
+    100%{
+        background-position:top;
+    }
+}

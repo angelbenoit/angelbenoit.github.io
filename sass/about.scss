@@ -7,6 +7,9 @@
     min-height: 25vh;
 
     &__text{
+        opacity: 0;
+        animation: aboutText 1.5s forwards;
+        animation-delay: 2s;
         h3{
             padding-bottom: 1.5rem;
         }

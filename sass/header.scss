@@ -2,13 +2,21 @@
     display: flex;
     min-height: 45vh;
     padding: 0 10%;
-    background: linear-gradient(to bottom, #fff, rgba(27, 176, 161, 0.65));
+    background: linear-gradient(270deg,
+                #00ffbbab, #2f997ea6,
+                #296556af, #224b40a1)
+                ,url("../images/codeImage.jpg");
+    background-size: cover;
+    background-repeat: none;
+    background-position: top;
+    animation: BackgroundAnimate 25s linear infinite;
     clip-path: polygon(0 0, 100% 0, 100% 65% , 0 100%);
     align-items: center;
 
     @media only screen and (max-width: 950px) {
         flex-direction: column;
         min-height: 70vh;
+        background-size: 300%;
     }
 
     &__text{
@@ -19,14 +27,18 @@
         justify-content: center;
 
         &--name{
-            color: $color-gray-1;
+            color: #fff;
             opacity: 0;
             animation: headerName 1.5s ease forwards;
             font-size: 250%;
+
+            @media only screen and (max-width: 950px) {
+                font-size: 125%;
+            }
         }
 
         &--title{
-            color: $color-gray-1;
+            color: #fff;
             padding-top: 2.5rem;
             transform: translateX(50px);
             opacity: 0;
