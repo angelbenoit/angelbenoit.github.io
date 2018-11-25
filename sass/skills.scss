@@ -51,11 +51,9 @@
             grid-template-columns: repeat(3, 1fr);
         }
 
-        @media only screen and (max-width: 500px) {
-            grid-template-rows: repeat(4, 1fr);
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 15px;
-            padding: 1rem;
+        @media only screen and (max-width: 550px) {
+            grid-gap: 1.5rem;
+            padding: 2.5rem;
         }
 
         svg,img{
@@ -64,13 +62,8 @@
             transition: all .7s;
 
             @media only screen and (max-width: 950px) {
-                width: 80px;
-                height: 80px;
-            }
-
-            @media only screen and (max-width: 750px) {
-                width: 50px;
-                height: 50px;
+                width: 10vh;
+                height: 10vh;
             }
 
             &:hover{
