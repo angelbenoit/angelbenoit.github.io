@@ -296,11 +296,14 @@
   .portfolioPreview .project {
     display: flex;
     margin: 0 5rem;
-    margin-top: 5rem; }
+    margin-top: 5rem;
+    justify-content: center; }
     @media only screen and (max-width: 950px) {
       .portfolioPreview .project {
         flex-direction: column;
-        margin: 0 2.5rem; } }
+        margin: 0 2.5rem;
+        padding-top: 3.5rem;
+        border-bottom: 1px solid #2c2c2c; } }
     .portfolioPreview .project__text {
       color: #2c2c2c;
       display: flex;
@@ -326,7 +329,7 @@
         @media only screen and (max-width: 950px) {
           .portfolioPreview .project__image img {
             width: 65%;
-            padding-top: 3rem; } }
+            padding-top: 2rem; } }
     .portfolioPreview .project__buttons {
       display: flex;
       justify-content: space-between; }
