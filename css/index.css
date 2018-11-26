@@ -167,8 +167,25 @@
     background-position: 0% 50%; } }
 
 .link {
+  display: flex;
   text-decoration: none;
-  color: green; }
+  font-size: 1.1rem;
+  color: #2c2c2c;
+  align-items: center;
+  transition: all .7s; }
+  .link__item {
+    display: flex;
+    align-items: center; }
+    .link__item i {
+      font-size: 125%; }
+  @media only screen and (max-width: 1150px) {
+    .link {
+      font-size: 95%; } }
+  @media only screen and (max-width: 650px) {
+    .link {
+      font-size: 75%; } }
+  .link:hover {
+    color: #868686; }
 
 .header {
   display: -webkit-box;
@@ -274,19 +291,30 @@
 
 .portfolioPreview {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  color: #2c2c2c; }
   .portfolioPreview .project {
     display: flex;
     margin: 0 5rem;
     margin-top: 5rem; }
+    @media only screen and (max-width: 950px) {
+      .portfolioPreview .project {
+        flex-direction: column;
+        margin: 0 2.5rem; } }
     .portfolioPreview .project__text {
+      color: #2c2c2c;
       display: flex;
       flex-direction: column;
       justify-content: center;
       text-align: center;
+      font-size: 130%;
       flex: 1; }
-      .portfolioPreview .project__text :nth-child(2) {
-        padding-top: 1.5rem; }
+      .portfolioPreview .project__text p {
+        padding: 1.5rem;
+        color: #4b4b4b; }
+      @media only screen and (max-width: 1150px) {
+        .portfolioPreview .project__text {
+          font-size: 100%; } }
     .portfolioPreview .project__image {
       flex: 2;
       display: flex;
@@ -295,6 +323,13 @@
         width: 50%;
         height: 100%;
         margin: 0 auto; }
+        @media only screen and (max-width: 950px) {
+          .portfolioPreview .project__image img {
+            width: 65%;
+            padding-top: 3rem; } }
+    .portfolioPreview .project__buttons {
+      display: flex;
+      justify-content: space-between; }
 
 .skills {
   background: linear-gradient(270deg, #11da68, #1ec9689d, #eaffeb);

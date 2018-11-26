@@ -1,12 +1,29 @@
 .link{
+    display: flex;
     text-decoration: none;
-    font-size: 20rem;
+    font-size: 1.1rem;
+    color: $color-gray-2;
+    align-items: center;
+    transition: all .7s;
 
-    &__github{
+    &__item{
+        display: flex;
+        align-items: center;
 
+        i{
+            font-size: 125%;
+        }
     }
 
-    &__demo{
+    @media only screen and (max-width: 1150px) {
+        font-size: 95%;
+    }
 
+    @media only screen and (max-width: 650px) {
+        font-size: 75%;
+    }
+
+    &:hover{
+        color: $color-gray-3;
     }
 }
