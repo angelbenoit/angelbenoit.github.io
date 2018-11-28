@@ -4,6 +4,9 @@
     text-align: center;
     min-height: 7.5vh;
     justify-content: space-around;
+    color: $color-gray-1;
+    padding: 2rem 0;
+    background: linear-gradient(to top, rgba(15, 124, 91, 0.6), white);
 
     &__links{
         display: flex;
