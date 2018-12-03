@@ -12,6 +12,7 @@
 $color-gray-1: rgb(75, 75, 75);
 $color-gray-2: rgb(44, 44, 44);
 $color-gray-3: rgb(134, 134, 134);
+$color-gray-4: rgb(199, 199, 199);
 
 @import "about.scss";
 @import "animations.scss";
@@ -19,4 +20,5 @@ $color-gray-3: rgb(134, 134, 134);
 @import "footer.scss";
 @import "header.scss";
 @import "portfolioPreview.scss";
+@import "projectInfo.scss";
 @import "skills.scss";
