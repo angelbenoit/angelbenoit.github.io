@@ -359,8 +359,15 @@
 .projectInfo {
   display: flex;
   min-height: 100vh;
-  font-family: sans-serif;
-  background: linear-gradient(to right top, #697969, #3a3b3b); }
+  font-family: sans-serif; }
+  .projectInfo__greenGray {
+    background: linear-gradient(to right top, #697969, #3a3b3b); }
+  .projectInfo__greenYellow {
+    background: linear-gradient(to right bottom, #77ff77, #049b2a); }
+  .projectInfo__lightBlue {
+    background: linear-gradient(to right bottom, #b1f3ff, #006eff); }
+  .projectInfo__purpleLight {
+    background: linear-gradient(to right bottom, #b1b6ff, #2b168a); }
   @media only screen and (max-width: 850px) {
     .projectInfo {
       flex-direction: column; } }
@@ -398,12 +405,22 @@
       .projectInfo__text {
         width: 100%;
         padding-top: 1rem; } }
-    .projectInfo__text h1 {
-      padding-bottom: 3rem;
+    .projectInfo__text__greenGray h1 {
       color: #868686; }
-    .projectInfo__text p {
-      padding-bottom: 2rem;
+    .projectInfo__text__greenGray p {
       color: #c7c7c7; }
+    .projectInfo__text__greenYellow h1 {
+      color: #2c2c2c; }
+    .projectInfo__text__greenYellow p {
+      color: #4b4b4b; }
+    .projectInfo__text__lightText h1 {
+      color: white; }
+    .projectInfo__text__lightText p {
+      color: whitesmoke; }
+    .projectInfo__text h1 {
+      padding-bottom: 3rem; }
+    .projectInfo__text p {
+      padding-bottom: 2rem; }
 
 .skills {
   background: linear-gradient(270deg, #11da68, #1ec9689d, #eaffeb);

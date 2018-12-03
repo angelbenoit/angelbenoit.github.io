@@ -2,7 +2,22 @@
     display: flex;
     min-height: 100vh;
     font-family: sans-serif;
-    background: linear-gradient(to right top, rgb(105, 121, 105), rgb(58, 59, 59));
+
+    &__greenGray{
+        background: linear-gradient(to right top, rgb(105, 121, 105), rgb(58, 59, 59));
+    }
+
+    &__greenYellow{
+        background: linear-gradient(to right bottom, rgb(119, 255, 119), rgb(4, 155, 42));
+    }
+
+    &__lightBlue{
+        background: linear-gradient(to right bottom, rgb(177, 243, 255), rgb(0, 110, 255));
+    }
+
+    &__purpleLight{
+        background: linear-gradient(to right bottom, rgb(177, 182, 255), rgb(43, 22, 138));
+    }
 
     @media only screen and (max-width: 850px) {
         flex-direction: column;
@@ -24,7 +39,6 @@
         }
 
         img{
-            //width: 55%;
             height: 30vh;
             border: .5rem solid rgb(116, 132, 138);
 
@@ -52,14 +66,39 @@
             padding-top: 1rem;
         }
 
+        &__greenGray{
+            h1{
+                color: $color-gray-3;
+            }
+            p{
+                color: $color-gray-4;
+            }
+        }
+
+        &__greenYellow{
+            h1{
+                color: $color-gray-2;
+            }
+            p{
+                color: $color-gray-1;
+            }
+        }
+
+        &__lightText{
+            h1{
+                color: white;
+            }
+            p{
+                color: whitesmoke;
+            }
+        }
+
         h1{
             padding-bottom: 3rem;
-            color: $color-gray-3;
         }
 
         p{
             padding-bottom: 2rem;
-            color: $color-gray-4;
         }
     }
 }
