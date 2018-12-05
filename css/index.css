@@ -421,6 +421,10 @@
       padding-bottom: 3rem; }
     .projectInfo__text p {
       padding-bottom: 2rem; }
+  .projectInfo__links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%; }
 
 .skills {
   background: linear-gradient(270deg, #11da68, #1ec9689d, #eaffeb);
