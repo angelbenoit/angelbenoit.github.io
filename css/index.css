@@ -210,10 +210,10 @@
   display: flex;
   min-height: 60vh;
   padding: 0 10%;
-  background: -webkit-gradient(linear, right top, left top, from(#00ffbbab), color-stop(#2f997ea6), color-stop(#296556af), to(#224b40a1)), url("../images/codeImage.jpg");
-  background: -webkit-linear-gradient(right, #00ffbbab, #2f997ea6, #296556af, #224b40a1), url("../images/codeImage.jpg");
-  background: -o-linear-gradient(right, #00ffbbab, #2f997ea6, #296556af, #224b40a1), url("../images/codeImage.jpg");
-  background: linear-gradient(270deg, #00ffbbab, #2f997ea6, #296556af, #224b40a1), url("../images/codeImage.jpg");
+  background: -webkit-gradient(linear, right top, left top, from(#00ffbbab), color-stop(#2f997ea6), color-stop(#296556af), to(#224b40a1)), url("https://i.ibb.co/wNSJ436/code-Image.jpg");
+  background: -webkit-linear-gradient(right, #00ffbbab, #2f997ea6, #296556af, #224b40a1), url("https://i.ibb.co/wNSJ436/code-Image.jpg");
+  background: -o-linear-gradient(right, #00ffbbab, #2f997ea6, #296556af, #224b40a1), url("https://i.ibb.co/wNSJ436/code-Image.jpg");
+  background: linear-gradient(270deg, #00ffbbab, #2f997ea6, #296556af, #224b40a1), url("https://i.ibb.co/wNSJ436/code-Image.jpg");
   background-size: cover;
   background-repeat: none;
   background-position: top;
@@ -296,15 +296,15 @@
     animation: headerImage 1.5s ease forwards;
     -webkit-animation-delay: 1.5s;
     animation-delay: 1.5s; }
-    .header__image img {
+    .header__image svg {
       width: 50%; }
       @media only screen and (max-width: 950px) {
-        .header__image img {
+        .header__image svg {
           margin: 0 auto;
           width: 100%;
           height: 10rem; } }
       @media only screen and (max-width: 400px) {
-        .header__image img {
+        .header__image svg {
           height: 9rem; } }
 
 .portfolioPreview {

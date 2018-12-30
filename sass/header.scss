@@ -8,19 +8,19 @@
                 right top, left top,
                 from(#00ffbbab), color-stop(#2f997ea6),
                 color-stop(#296556af), to(#224b40a1))
-                ,url("../images/codeImage.jpg");
+                ,url("https://i.ibb.co/wNSJ436/code-Image.jpg");
     background: -webkit-linear-gradient(right,
                 #00ffbbab, #2f997ea6,
                 #296556af, #224b40a1)
-                ,url("../images/codeImage.jpg");
+                ,url("https://i.ibb.co/wNSJ436/code-Image.jpg");
     background: -o-linear-gradient(right,
                 #00ffbbab, #2f997ea6,
                 #296556af, #224b40a1)
-                ,url("../images/codeImage.jpg");
+                ,url("https://i.ibb.co/wNSJ436/code-Image.jpg");
     background: linear-gradient(270deg,
                 #00ffbbab, #2f997ea6,
                 #296556af, #224b40a1)
-                ,url("../images/codeImage.jpg");
+                ,url("https://i.ibb.co/wNSJ436/code-Image.jpg");
     background-size: cover;
     background-repeat: none;
     background-position: top;
@@ -115,7 +115,7 @@
         -webkit-animation-delay: 1.5s;
                 animation-delay: 1.5s;
 
-        img{
+        svg{
             width: 50%;
 
             @media only screen and (max-width: 950px) {
