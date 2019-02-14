@@ -19,6 +19,10 @@
         background: linear-gradient(to right bottom, rgb(177, 182, 255), rgb(43, 22, 138));
     }
 
+    &__redPurple{
+        background: linear-gradient(to right bottom, rgb(255, 87, 87), rgb(138, 22, 22));
+    }
+
     @media only screen and (max-width: 850px) {
         flex-direction: column;
     }

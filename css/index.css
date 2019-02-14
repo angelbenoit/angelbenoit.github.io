@@ -368,6 +368,8 @@
     background: linear-gradient(to right bottom, #b1f3ff, #006eff); }
   .projectInfo__purpleLight {
     background: linear-gradient(to right bottom, #b1b6ff, #2b168a); }
+  .projectInfo__redPurple {
+    background: linear-gradient(to right bottom, #ff5757, #8a1616); }
   @media only screen and (max-width: 850px) {
     .projectInfo {
       flex-direction: column; } }
